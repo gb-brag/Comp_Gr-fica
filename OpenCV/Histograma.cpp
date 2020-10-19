@@ -12,10 +12,10 @@ using namespace cv;
 int main(int argc, char** argv) {
 
     vector<Mat> rgb_planes;
-    int histSize = 256; //valor m·ximo do intervalo
+    int histSize = 256; //valor m√°ximo do intervalo
     float range[] = { 0, 256 }; //the upper boundary is exclusive
     const float* histRange = { range };
-    bool uniform = true, accumulate = false; // uniforme e limpa o histograma no comeÁo
+    bool uniform = true, accumulate = false; // uniforme e limpa o histograma no come√ßo
     Mat r_hist, g_hist, b_hist;
 
     //Abrir imagem
@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
     normalize(g_hist, g_hist, 0, histImage.rows, NORM_MINMAX, -1, Mat());
     normalize(b_hist, b_hist, 0, histImage.rows, NORM_MINMAX, -1, Mat());
 
-    //Desenha o gr·fico
+    //Desenha o gr√°fico
     for (int i = 1; i < histSize; i++)
     {
         line(histImage, Point(bin_w * (i - 1), hist_h - cvRound(r_hist.at<float>(i - 1))),
