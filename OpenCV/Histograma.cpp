@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
     Mat r_hist, g_hist, b_hist;
 
     //Abrir imagem
-    CommandLineParser parser(argc, argv, "{@input | C:/Users/bielb/Pictures/3.jpg | input image}");
+    CommandLineParser parser(argc, argv, "{@input | .../Pictures/3.jpg | input image}");
     Mat src = imread(samples::findFile(parser.get<String>("@input")), IMREAD_COLOR);
     if (src.empty())
     {
