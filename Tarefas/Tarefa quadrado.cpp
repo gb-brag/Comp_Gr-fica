@@ -114,7 +114,7 @@ void desenhar(void) {
 	line(out, Point(d3[0], d3[1]), Point(d4[0], d4[1]), Scalar(143, 157, 42), 3);
 
 	namedWindow("final", WINDOW_NORMAL);
-	imshow("final", out); 
+	imshow("final", out);
 
 	namedWindow("original", WINDOW_NORMAL);
 	imshow("original", out_or);
@@ -146,7 +146,7 @@ int main(void) {
 		cout << "\n-------------------------------------------------------------------------------------------------------------\n";
 		cout << "\ndigite b para redesenhar\ndigite c para sair\n";
 
-	} while (ch != 27);		// Wait until <ESC> was pressed
+	} while (ch != 27);
 	cout << endl;
 
 	return 0;
