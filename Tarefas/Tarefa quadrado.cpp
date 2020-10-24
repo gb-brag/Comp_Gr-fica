@@ -43,7 +43,7 @@ void desenhar(void) {
 	cin >> x;
 	cout << "Entre com as coordenada Y do quadrado (0-512): ";
 	cin >> y;
-	cout << "Entre com comprimento do tringulo: ";
+	cout << "Entre com comprimento do quadrado: ";
 	cin >> com;
 	cout << "Entre com a largura do quadrado: ";
 	cin >> larg;
@@ -78,8 +78,8 @@ void desenhar(void) {
 	cout << endl << "PC" << endl << pc << endl;
 	cout << "\nBranco - Original\nVerde - Rotacionado\nLaranja - Rotacionado e escalonado\n";
 
-	cout << "\nPrecione algum botao para fechar a tela";
-	Sleep(4000);
+	cout << "\nPrecione algum botao para fechar a imagem";
+	Sleep(3000);
 
 	T1 << 1, 0, 0,
 		0, 1, 0,
@@ -113,8 +113,8 @@ void desenhar(void) {
 	line(out, Point(d2[0], d2[1]), Point(d4[0], d4[1]), Scalar(143, 157, 42), 3);
 	line(out, Point(d3[0], d3[1]), Point(d4[0], d4[1]), Scalar(143, 157, 42), 3);
 
-	namedWindow("canvas", WINDOW_NORMAL);
-	imshow("canvas", out);
+	namedWindow("final", WINDOW_NORMAL);
+	imshow("final", out); 
 
 	namedWindow("original", WINDOW_NORMAL);
 	imshow("original", out_or);
