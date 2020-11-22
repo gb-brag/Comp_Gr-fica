@@ -43,6 +43,10 @@ void Calcula_circun()
 
 void Calcula_reta()
 {
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(1.0f, 0.8f, 0.0f);
     if (brese == 2)
     {
         float x = xi;
